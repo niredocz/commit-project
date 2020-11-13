@@ -1,12 +1,13 @@
 name: Auto commit
 
 on:
+  
   push:
     branches:
       - master
       
   schedule:
-  - cron: "* * * * *"
+  - cron: "0 6-12 * * *"
 
 jobs:
   auto_commit:
