@@ -1,7 +1,6 @@
 name: Auto commit
 
 on:
-
   push:
     branches:
       - master
@@ -27,7 +26,7 @@ jobs:
         run: |
           git config --local user.email "daffa.rogers@gmail.com"
           git config --local user.name "niredocz"
-          git add .
+          git add -A
           
           arr[0]="feat: 😂 auto commit"
           arr[1]="feat: 😱 auto commit"
